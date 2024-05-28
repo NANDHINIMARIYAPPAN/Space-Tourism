@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Inter", sans-serif;
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+    --font-family: "Inter", sans-serif;
+    --font-size: 14px;
+}
+
+.container-fluid {
+    height: 100vh;
+    background-color: var(--Off-Black);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+.row {
+    height: 100%;
+}
+
+.card {
+    background-color: var(--Dark-Grey);
+    color: var(--White);
+    padding: 1rem;
+}
+
+h3 {
+    color: var(--White);
+}
+
+.card-title p {
+    color: var(--Green);
+}
+
+.card-btn .btn {
+    background-color: var(--Grey);
+    color: var(--White);
+    border: 1px solid var(--Grey);
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+@media (min-width: 1200px) {
+    .col-xl-3 {
+        flex: 0 0 auto;
+        width: 30% !important;
+    }
+}
